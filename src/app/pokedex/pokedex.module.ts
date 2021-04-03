@@ -3,14 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { PokedexRoutingModule } from './pokedex-routing.module';
 import { PokedexComponent } from './pokedex.component';
-import { SearchComponent } from './components/search/search.component';
-
+import { SearchComponent } from './search/search.component';
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 
 @NgModule({
-  declarations: [PokedexComponent, SearchComponent],
-  imports: [
-    CommonModule,
-    PokedexRoutingModule
-  ]
+  declarations: [PokedexComponent, SearchComponent, PokemonListComponent],
+  imports: [CommonModule, PokedexRoutingModule],
 })
-export class PokedexModule { }
+export class PokedexModule {}
